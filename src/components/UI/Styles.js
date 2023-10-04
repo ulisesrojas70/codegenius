@@ -81,7 +81,7 @@ export const BodySmaller = styled(TitleBig)`
     font-weight: 300;
 `;
 
-export const ContainerForm = styled.section`
+export const Form = styled.form`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;

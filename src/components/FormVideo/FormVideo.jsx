@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { ContainerForm, TitleMedium, } from '../UI/Styles';
+import { Form, TitleMedium, } from '../UI/Styles';
 import DefaultPage from '../DefaultPage';
 import styled from 'styled-components';
 import {
@@ -14,6 +11,7 @@ import {
     colorGrayLight,
     colorPrimaryMedium
 } from '../UI/variables';
+import Button from '../Button';
 
 const TitleContainer = styled.div`
     margin: 3rem 0;
@@ -53,56 +51,65 @@ const FormVideo = () => {
 
     return (
         <DefaultPage>
+
             <TitleContainer>
                 <TitleMedium>Nuevo Video</TitleMedium>
             </TitleContainer>
 
-            <ContainerForm >
-                <TextField
-                    id="filled-basic"
-                    label="Titulo"
-                    variant="filled"
-                    margin="normal"
-                    sx={customInputStyles}
-                />
-                <TextField
-                    id="filled-basic"
-                    label="Link del video"
-                    variant="filled"
-                    margin="normal"
-                    sx={customInputStyles}
-                />
-                <TextField
-                    id="filled-basic"
-                    label="Link de imagen del video"
-                    variant="filled"
-                    margin="normal"
-                    sx={customInputStyles}
-                />
-
-                <TextField
-                    id="filled-select-currency"
-                    select
-                    label="Categoría"
-                    defaultValue="EUR"
-                    variant="filled"
-                    margin="normal"
-                    value={category}
-                    onChange={handleChange}
-                    sx={customInputStyles}
+            
+                <Form onSubmit={(e) => {
+                    e.preventDefault();
+                }}
                 >
-                    <MenuItem value={10}>1</MenuItem>
-                </TextField>
+                    <TextField
+                        id="filled-basic"
+                        label="Titulo"
+                        variant="filled"
+                        margin="normal"
+                        sx={customInputStyles}
+                    />
+                    <TextField
+                        id="filled-basic"
+                        label="Link del video"
+                        variant="filled"
+                        margin="normal"
+                        sx={customInputStyles}
+                    />
+                    <TextField
+                        id="filled-basic"
+                        label="Link de imagen del video"
+                        variant="filled"
+                        margin="normal"
+                        sx={customInputStyles}
+                    />
 
-                <TextField
-                    id="filled-basic"
-                    label="Descripción"
-                    variant="filled"
-                    margin="normal"
-                    sx={customInputStyles}
-                />
+                    <TextField
+                        id="filled-select-currency"
+                        select
+                        label="Categoría"
+                        defaultValue="EUR"
+                        variant="filled"
+                        margin="normal"
+                        value={category}
+                        onChange={handleChange}
+                        sx={customInputStyles}
+                    >
+                        <MenuItem value={10}>1</MenuItem>
+                    </TextField>
 
-            </ContainerForm>
+                    <TextField
+                        id="filled-basic"
+                        label="Descripción"
+                        variant="filled"
+                        margin="normal"
+                        sx={customInputStyles}
+                    />
+
+                    <Button type='sumbit'>Guardar</Button>
+                    <Button >Limpiar</Button>
+                    <Button >Nueva Categoría</Button>
+                </Form>
+
         </DefaultPage>
     )
 }

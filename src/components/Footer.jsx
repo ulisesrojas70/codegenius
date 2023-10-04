@@ -45,7 +45,6 @@ const Footer = () => {
             <Link to="/">
                 <Logo src={codegenius} alt="Logo CODEGENIUS" />
             </Link>
-
             {renderComponent()}
         </FooterStyled>
     )
