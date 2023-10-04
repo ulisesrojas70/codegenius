@@ -1,0 +1,71 @@
+[
+    {       
+        "id_categoria": 1,
+        "nombre_categoria": "Frontend",
+        "descripcion": "Formación Front End de CodeGenius",
+        "background_color": "#6BD1FF",
+        "video": [
+            {
+                "titlulo": "React",
+                "link_video": "nlcIKh6sBtc",
+                "url_img_video": "https://i.ytimg.com/vi/nlcIKh6sBtc/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "React",
+                "link_video": "zKFzKIa_pIM",
+                "url_img_video": "https://i.ytimg.com/vi/zKFzKIa_pIM/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "React",
+                "link_video": "K3Qzzggn--s",
+                "url_img_video": "https://i.ytimg.com/vi/K3Qzzggn--s/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "Java",
+                "link_video": "jDvYDzFOK9A",
+                "url_img_video": "https://i.ytimg.com/vi/jDvYDzFOK9A/maxresdefault.jpg"
+            }
+        ]
+    },
+    {
+        "id_categoria": 2,
+        "nombre_categoria": "Backend",
+        "descripcion": "Formación BackEnd de CodeGenius",
+        "background_color": "#00C86F",
+        "video": [
+            {
+                "titlulo": "Java",
+                "link_video": "jDvYDzFOK9A",
+                "url_img_video": "https://i.ytimg.com/vi/jDvYDzFOK9A/maxresdefault.jpg"
+            }
+        ]
+    },
+    {       
+        "id_categoria": 3,
+        "nombre_categoria": "Inovación y Gestión",
+        "descripcion": "Formación Inovación y Gestión de CodeGenius",
+        "background_color": "#FE8C2A",
+        "video": [
+            {
+                "titlulo": "React",
+                "link_video": "nlcIKh6sBtc",
+                "url_img_video": "https://i.ytimg.com/vi/nlcIKh6sBtc/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "React",
+                "link_video": "zKFzKIa_pIM",
+                "url_img_video": "https://i.ytimg.com/vi/zKFzKIa_pIM/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "React",
+                "link_video": "K3Qzzggn--s",
+                "url_img_video": "https://i.ytimg.com/vi/K3Qzzggn--s/maxresdefault.jpg"
+            },
+            {
+                "titlulo": "Java",
+                "link_video": "jDvYDzFOK9A",
+                "url_img_video": "https://i.ytimg.com/vi/jDvYDzFOK9A/maxresdefault.jpg"
+            }
+        ]
+    }
+]

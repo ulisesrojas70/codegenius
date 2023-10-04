@@ -1,15 +1,21 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import styled from "styled-components";
+import { colorBlackDark } from "./UI/variables";
 
-const DefaultPage = ( {children} ) => {
+const DefaultPageStyled = styled.div`
+    background-color: ${colorBlackDark};
+`;
+
+const DefaultPage = ( {children, showButton} ) => {
     return (
-        <>
-            <Header />
+        <DefaultPageStyled>
+            <Header showButton={showButton}/>
             <>
                 {children}
             </>
             <Footer/>
-        </>
+        </DefaultPageStyled>
     )
 }
 

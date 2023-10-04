@@ -1,16 +1,22 @@
 import ResetCSS from "./ResetCSS";
 import { Global } from "./components/UI/Styles";
-import BannerMain from "./components/BannerMain";
-import DefaultPage from "./components/DefaultPage";
+import FormVideo from "./components/FormVideo/FormVideo";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Switch, Routes } from "react-router-dom";
 
 function App() {
+
 	return (
-		<Global>
-			<ResetCSS/>
-			<DefaultPage>
-				<BannerMain/>
-			</DefaultPage>
-		</Global>
+		<Router>
+			<Global>
+				<ResetCSS />
+				<Routes>
+					<Route exact path="/" Component={Home}/>
+					<Route path="/FormVideo" Component={FormVideo} />
+				</Routes>
+			</Global>
+		</Router>
+
 	);
 }
 

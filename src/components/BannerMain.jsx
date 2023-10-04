@@ -25,20 +25,33 @@ const Info = styled.div `
     gap: 1rem;
 `;
 
+const BannerImg = styled.img`
+    @media screen and (max-width: 1440px){
+        max-width: 596px;
+        max-height: 284px;
+    } 
+    @media screen and (max-width: 1024px){
+        display: none;
+    } 
+`;
+
 const BannerMain = () => {
     return (
         <Section>
             <Info>
-                <TitleCategory>Frontend</TitleCategory>
+                <TitleCategory
+                    height={'92px'}
+                    width={'296px'}
+                    fontSize={'60px'}
+                >
+                    Frontend
+                </TitleCategory>
                 <TitleMedium>Challenge React</TitleMedium>
                 <BodyMedium>
                     Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React.
                 </BodyMedium>
             </Info>
-
-            <div>
-                <img src={player} alt="Banner"/>
-            </div>
+            <BannerImg src={player} alt="Banner"/>
         </Section>
     )
 }

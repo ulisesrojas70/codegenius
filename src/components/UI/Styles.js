@@ -5,7 +5,7 @@ export const Global = styled.body`
     font-family: Roboto;
 `
 
-export const StyledButton = styled.a`
+export const StyledButton = styled.button`
     padding: ${(props) => props.padding || '10px 40px'};
     color: ${(props) => props.color || '#FFFFFF'};
     background-color: ${(props) => props.backgroundColor || colorPrimaryMedium};
@@ -32,11 +32,11 @@ export const Logo = styled.img`
 `;
 
 export const StyledTitleCategory = styled.label`
-    width: 296px;
-    height: 92px;
-    background-color: #6BD1FF;
-    font-size: 60px;
-    color: #FFFFFF;
+    width: ${(props) => props.width || '222px'} ;
+    height: ${(props) => props.height || '48px'} ;
+    background-color: ${(props) => props.backgroundColor || '#6BD1FF'} ;
+    font-size: ${(props) => props.fontSize || '22px'};
+    color: ${(props) => props.color || '#FFFFFF'} ;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -79,6 +79,13 @@ export const BodySmall = styled(TitleBig)`
 export const BodySmaller = styled(TitleBig)`
     font-size: 12px;
     font-weight: 300;
+`;
+
+export const ContainerForm = styled.section`
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 5%;
 `;
 
 
