@@ -17,6 +17,10 @@ export const StyledButton = styled.button`
     font-weight: 600;
     line-height: 24px;
 
+    &:hover {
+        opacity: 0.7;
+    }
+
     @media screen and (max-width: 768px){
         padding: 5px 20px;
         font-size: 12px;

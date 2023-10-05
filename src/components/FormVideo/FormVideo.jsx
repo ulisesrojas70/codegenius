@@ -13,8 +13,9 @@ import {
     colorPrimaryMedium
 } from '../UI/variables';
 import Button from '../Button';
+import { Link } from 'react-router-dom';
 
-const TitleContainer = styled.div`
+export const TitleContainer = styled.div`
     margin: 3rem 0;
     text-align: center;
 `;
@@ -31,7 +32,7 @@ const ContainerSubmit = styled.div`
     gap: 1rem;
 `;
 
-const customInputStyles = {
+export const customInputStyles = {
     '& input': {
         backgroundColor: colorBlackMedium,
         color: colorGrayLight,
@@ -80,6 +81,7 @@ const FormVideo = () => {
                     margin="normal"
                     sx={customInputStyles}
                 />
+
                 <TextField
                     id="filled-basic"
                     label="Link del video"
@@ -87,6 +89,7 @@ const FormVideo = () => {
                     margin="normal"
                     sx={customInputStyles}
                 />
+
                 <TextField
                     id="filled-basic"
                     label="Link de imagen del video"
@@ -124,7 +127,9 @@ const FormVideo = () => {
                             backgroundColor={colorBlackLighter}
                         >Limpiar</Button>
                     </ContainerSubmit>
-                    <Button >Nueva Categoría</Button>
+                    <Link to="/FormCategory">
+                        <Button >Nueva Categoría</Button>
+                    </Link>
                 </ContainerButtons>
             </Form>
 
