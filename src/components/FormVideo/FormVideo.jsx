@@ -57,9 +57,12 @@ export const customInputStyles = {
 const FormVideo = () => {
 
     const [category, setCategory] = useState('');
+    const [titulo, setTitulo] = useState('');
 
     const handleChange = (event) => {
         setCategory(event.target.value);
+        setTitulo(event.target.value);
+        console.log(event.target.value)
     };
 
 
@@ -80,6 +83,8 @@ const FormVideo = () => {
                     variant="filled"
                     margin="normal"
                     sx={customInputStyles}
+                    value={titulo}
+                    onChange={handleChange}
                 />
 
                 <TextField
@@ -109,7 +114,9 @@ const FormVideo = () => {
                     onChange={handleChange}
                     sx={customInputStyles}
                 >
-                    <MenuItem value={10}>1</MenuItem>
+                    <MenuItem value="1">Frontend</MenuItem>
+                    <MenuItem value="1">Backend</MenuItem>
+                    <MenuItem value="1">Inovación y gestión</MenuItem>
                 </TextField>
 
                 <TextField

@@ -1,8 +1,8 @@
 [
-    {       
+    {
         "id_categoria": 1,
         "nombre_categoria": "Frontend",
-        "descripcion": "Formación Front End de CodeGenius",
+        "descripcion": "Formación FrontEnd de CodeGenius",
         "background_color": "#6BD1FF",
         "video": [
             {
@@ -45,7 +45,7 @@
             }
         ]
     },
-    {       
+    {
         "id_categoria": 3,
         "nombre_categoria": "Inovación y Gestión",
         "descripcion": "Formación Inovación y Gestión de CodeGenius",

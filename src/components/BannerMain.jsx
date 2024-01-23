@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import programming from '../assets/images/programming.png'
 import TitleCategory from "./TitleCategory";
-import player from '../assets/images/player.png'
 import { TitleMedium, BodyMedium } from "./UI/Styles";
 
-const Section = styled.section `
+const Section = styled.section`
     padding: 14rem 5% 2rem 5%;
     background-image: url(${programming});
     background-color: rgba(255, 255, 255, 0.5);
@@ -19,17 +18,17 @@ const Section = styled.section `
     }
 `;
 
-const Info = styled.div `
+const Info = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
 `;
 
-const BannerImg = styled.img`
-    @media screen and (max-width: 1440px){
-        max-width: 596px;
-        max-height: 284px;
-    } 
+const BannerImg = styled.iframe`
+    height: 40vh;
+    width: 100vw;
+
+     
     @media screen and (max-width: 1024px){
         display: none;
     } 
@@ -46,12 +45,13 @@ const BannerMain = () => {
                 >
                     Frontend
                 </TitleCategory>
-                <TitleMedium>Challenge React</TitleMedium>
+                <TitleMedium>React</TitleMedium>
                 <BodyMedium>
-                    Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React.
+                    React es una poderosa herramienta para crear aplicaciones web modernas y escalables. Puedes aprender a construir interfaces de usuario atractivas, gestionar el estado de la aplicación de manera efectiva y aprovechar un ecosistema rico en recursos para llevar tus proyectos al siguiente nivel.
                 </BodyMedium>
             </Info>
-            <BannerImg src={player} alt="Banner"/>
+
+            <BannerImg src="https://www.youtube.com/embed/rLoWMU4L_qE?si=4x2l6TXvJBy4XS88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></BannerImg>
         </Section>
     )
 }
